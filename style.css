@@ -1,17 +1,39 @@
-.name { 
-  font-size: 28px; /* Bigger name */
-  font-weight: bold; 
-  margin-top: 15px; 
+/* Center everything on the screen */
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* Make the photo small, circular, and centered */
+.photo {
+  width: 120px;      /* Fixed small width */
+  height: 120px;     /* Fixed small height */
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover;  /* Prevents the image from stretching */
+  border: 3px solid #007bff; /* Optional: adds a nice border */
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 24px;
+  margin: 10px 0 5px 0;
 }
 
 .course {
-  font-size: 18px; /* Slightly larger course text */
+  font-size: 16px;
   color: #555;
+  margin-bottom: 10px;
 }
 
-.bio { 
-  font-size: 16px; /* Easy to read bio text */
-  color: #888;
-  max-width: 80%;
-  line-height: 1.5; /* Adds space between lines for better look */
+.bio {
+  font-size: 14px;
+  color: #777;
+  max-width: 250px; /* Keeps the text from spreading too wide */
+  line-height: 1.4;
 }
